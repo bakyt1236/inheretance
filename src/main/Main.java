@@ -22,6 +22,7 @@ public class Main {
         footbalplayer.setGender("Male");
         footbalplayer.setBoots("Nike");
 
+
         return footbalplayer;
 
     }
