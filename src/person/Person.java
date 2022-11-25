@@ -1,6 +1,7 @@
 package person;
 
 public class Person {
+
     private String Job;
     private String name;
     private String surname;
@@ -12,7 +13,7 @@ public class Person {
     }
 
     public Person(String job, String name, String surname, int age, String gender) {
-        Job = job;
+        this.Job = job;
         this.name = name;
         this.surname = surname;
         this.age = age;
@@ -61,13 +62,11 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "Job='" + Job + '\'' +
+        return "Job='" + Job + '\'' +
                 ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", age=" + age +
-                ", gender='" + gender + '\'' +
-                '}';
+                ", gender='" + gender;
     }
 }
 
